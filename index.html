@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/009011d75c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div  class="container">
+      <nav>
+        <img src="images/logo.png" alt="" name="logo">
+        <ul id="sidemenu" onClick="closemenu()">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <i class="fa-regular fa-circle-xmark" onClick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onClick="openmenu()"></i>
+       
+      </nav>
+      </div>
+      <div class="header-text"> 
+        <p>Full-Stack developer</p>
+        <h1>Hi,I'm <span>Collinstone </span><br>Odera from Kenya</h1>
+      </div>
+    </div>
+
+<!---------about------------>
+    <div id="about">
+      <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="images/collo2.png" alt="">           
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Full-Stack Developer | Passionate about building interactive, 
+            user-friendly, and scalable web applications.
+             Skilled in JavaScript, React, Node.js, Python, and Java.
+              I help individuals and businesses turn ideas 
+              into reliable digital solutions.
+          </p>
+        <div class="tab-title">
+          <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+          <p class="tab-links" onclick="openTab('experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+        </div>
+        <div  class="tab-content active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>E-commerce</span><br>Developing secure and responsive online stores</li>
+          </ul>
+        </div>
+                <div  class="tab-content" id="experience">
+          <ul>
+            <li><span>2024(May-September)</span><br>took a java course online</li>
+            <li><span>2024(October)-2025(January)</span><br>project manager of superhome interiors e-commerce platform</li>
+            <li><span>2025(February-June)</span><br>lead a group in coming up with a solution in solving the long queues in markets</li>
+            <li><span>2025(October-December)</span><br>internship at Nairobi city county</li>
+          </ul>
+        </div>
+                <div  class="tab-content" id="education">
+          <ul>
+            <li><span>(May 2024 –Present)</span><br>Diploma in computer science</li>
+            <li><span>(June 2025 – Present)</span><br>Certificate in Cybersecurity, ALX Online Programs</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!---------Services------------>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>web design</h2>
+        <p>
+          I create modern, responsive websites with clean 
+          designs and great user experiences that help brands 
+          stand out online.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+      <i class="fa-solid fa-crop-simple"></i>
+      <h2>UI/UX Design</h2>
+        <p>
+          I design intuitive, engaging interfaces that blend
+          creativity with usability, ensuring smooth and satisfying
+           user experiences across all devices.
+        </p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+        <i class="fa-brands fa-react"></i>
+        <h2>E-commerce</h2>
+        <p>
+         I build secure, responsive online stores with seamless 
+         shopping experiences — from product listings to payment 
+         integration — helping businesses grow and customers shop 
+         confidently.
+        </p>
+        <a href="#">Learn more</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!----------portfolio----------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      
+      <div class="work">
+        <img src="images/work3.jpeg" alt="">
+
+        <div class="layer">
+          <h3>E-commerce Platform</h3>
+          <p>
+            A full-featured online store with product listings, user authentication,
+            and secure payment integration designed for a smooth shopping experience.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/furniture.jpeg" alt="">
+        <div class="layer">
+          <h3>Furniture Website</h3>
+          <p>
+            A modern, responsive furniture website built to showcase products with
+            attractive layouts and an easy-to-use interface for customers.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+          <img src="images/work2.jpeg" alt="">
+          
+        <div class="layer">
+          <h3>Portfolio Website</h3>
+          <p>
+            A personal portfolio showcasing my skills, projects, and experience as
+            a full-stack developer, built with clean design and smooth navigation.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!--------------contact--------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>collinstoneochieng@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0795414789</p>
+        <div class="social-icons">
+          <a href="https://www.tiktok.com/@oderatechsolutions"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/254795414789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com/@CollinstoneOchieng"><i class="fa-brands fa-youtube"></i></a> 
+        </div>
+        <a href="images/CV_.pdf" download cLass="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet"> 
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="text" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">  Submit</button>
+        </form>
+        </div>
+    </div>
+
+  </div>
+<div class="copyright">
+  <p>Copyright @OderaTech. Made by Collinstone Odera</p>
+</div>
+</div>
+
+<script>
+  var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents = document.getElementsByClassName("tab-content");
+
+  function openTab(tabName){
+    for(tabLink of tabLinks){
+       tabLink.classList.remove("active-link");
+    }
+    for(tabContent of tabContents){
+       tabContent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+    
+  }
+  
+</script>
+<script>
+  var  sideMenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sideMenu.style.right = "0";
+  }
+   function closemenu(){
+    sideMenu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw3HNOTNUs0RIOt_Q2VqyX8uSAlT0MEGVDovBYvWQuug5e5JblB0z-npHog788gXIyl/exec';
+  const form = document.forms['submit-to-google-sheet'];
+
+  // Create a success message element
+  const successMsg = document.createElement("p");
+  successMsg.textContent = "Message sent successfully!";
+  successMsg.style.color = "limegreen";
+  successMsg.style.marginTop = "4px";
+  successMsg.style.display = "none"; 
+  form.appendChild(successMsg);
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        successMsg.style.display = "block";
+        form.reset(); 
+        setTimeout(() => successMsg.style.display = "none", 4000); 
+      })
+      .catch(error => {
+        successMsg.textContent = "Something went wrong. Please try again.";
+        successMsg.style.color = "red";
+        successMsg.style.display = "block";
+      });
+  });
+</script>
+
+</body>
+</html>
